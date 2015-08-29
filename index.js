@@ -28,7 +28,7 @@ app.get("/", function (req, res){
 });
 
 app.get("/phrases", function (req, res) {
-	
+	res.send(phrases);
 });
 
 
