@@ -15,8 +15,15 @@ ul {
   margin-top: 45px;
 }
 .form-inline {
-	text-align: center;
+    text-align: center;
+    margin-bottom: 30px;
 }
 .panel-title {
 	text-align: center;
+}
+#new-word-input {
+    margin-right: 147px;
+}
+.btn {
+    margin-top: -35px;
 }
