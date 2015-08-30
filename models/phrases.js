@@ -5,9 +5,11 @@ var Schema = mongoose.Schema;
 var PhraseSchema = new Schema({
 	word: {
 	  type: String,
+	  required: true
 	},
 	definition: {
 		type: String,
+		required: true
 	}
 })
 
