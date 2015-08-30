@@ -1,0 +1,14 @@
+body {
+	background-color: #F2F2E2;
+}
+.letsdothis {
+  margin-top: -10px;
+}
+.jumbotron {
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 45px;
+}
+.form-inline {
+	text-align: center;
+}
