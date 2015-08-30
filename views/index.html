@@ -24,7 +24,7 @@
       </header>
     </div>
     <form class="form-inline" id="new-phrase-form">
-      <input name="word" type="text" class="form-control" id="new-word-input" placeholder="New Word">
+      <input name="word" type="text" class="form-control" id="new-word-input" placeholder="Word">
       <br>
       <textarea name="definition" type="text" class="form-control" id="definition-input"
       rows="2" placeholder="Definition"></textarea>
@@ -36,14 +36,17 @@
   </div>
   <script type="text/template" id="phrases-template">
     <li>
-      <div class="panel panel-default">
+      <div class="panel panel-default panel-group" role="tablist" aria-multiselectable="true">
         <div class="panel-heading">
-          <h4 class="panel-title"><%= word %></h4>
-        </div>
-        <div class="panel-body">
-          <span><%= definition %></span>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseThis<%= _id %>" data-parent="#selector" aria-expanded="false" aria-controls="collapseThis">
+            <h4 class="panel-title"><%= word %></h4>
+          </button>
           <button data-_id="<%= _id %>" onclick="deletePhrase(this)" type="button" class="close"
-          aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="panel-body collapse" id="collapseThis<%= _id %>">
+         <%= definition %>
         </div>
       </div>
     </li>

@@ -55,7 +55,6 @@ app.post("/phrases", function (req, res) {
   })
 });
 
-
 app.delete("/phrases/:id", function (req, res) {
   var id = req.params.id;
   db.Phrase.remove({_id: id}, function(err, phrase) {

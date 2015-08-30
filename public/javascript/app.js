@@ -8,7 +8,7 @@ function pageLoad() {
     e.preventDefault();
     $.post("/phrases", $(this).serialize())
       .done(function(res) {
-        getPhrase();
+        getPhrases();
         $("#new-phrase-form")[0].reset();
       });
   });
