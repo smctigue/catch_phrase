@@ -2,7 +2,7 @@ var db = require("./models");
 
 var phrases = [{
     word: "HTTP",
-    definition: "Part of the application layer of Internet protocol suite that is used to transfer media across the world wide web"
+    definition: "Part of the application layer of Internet protocol suite that is used to transfer media across the world wide web."
   }, {
     word: "Mongoose",
     definition: "This provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box."
@@ -42,6 +42,6 @@ db.Phrase.create(phrases, function(err,
   console.log("added", phrases.length,
     "phrases")
   process.exit();
-})
+});
 
 // db.Phrase.remove({}, function(err, phrases){});

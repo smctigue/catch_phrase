@@ -1,11 +1,4 @@
 {
-  "name": "to-eatly",
-  "main": "index.js",
-  "version": "0.0.0",
-  "homepage": "https://github.com/sf-wdi-19-20/WDI21staging",
-  "authors": [
-    "Ilias Tsangaris <iliastsangaris@gmail.com>"
-  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
