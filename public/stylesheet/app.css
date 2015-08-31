@@ -48,3 +48,13 @@ ul {
     margin: 90px;
     margin-top: 20px;
 }
+.btn-word-name {
+    background-color: transparent;
+    border-radius: 0;
+    color: #6f5499;
+    border: 2px solid #6f5499;
+}
+.btn-word-name:active, .btn-word-name:hover {
+    background-color: #6f5499;
+    color: #fff
+}
