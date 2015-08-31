@@ -17,9 +17,9 @@ ul {
   left:0;
   z-index: -1;
   -webkit-filter: blur(3px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
   filter: blur(1px);
 }
 .jumbotron {
@@ -51,10 +51,10 @@ ul {
 .btn-word-name {
     background-color: transparent;
     border-radius: 0;
-    color: #6f5499;
-    border: 2px solid #6f5499;
+    color: #4A6EB8;
+    border: 2px solid #4A6EB8;
 }
 .btn-word-name:active, .btn-word-name:hover {
-    background-color: #6f5499;
+    background-color: #4A6EB8;
     color: #fff
 }
