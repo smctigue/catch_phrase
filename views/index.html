@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Catchphrase.ly</title>
   <meta charset="utf-8" />
@@ -15,6 +16,7 @@
   <script src="/static/javascript/app.js"></script>
 
 </head>
+
 <body>
   <div class="container" id="page-wrapper">
     <div class="bg"></div>
@@ -28,7 +30,7 @@
         <textarea name="definition" type="text" class="form-control" id="definition-input"
         rows="1" placeholder="Definition"></textarea>
         <button type="submit" class="btn btn-primary btn-lg active" data-toggle="tooltip"
-            data-placement="top" title="Add new word!">Add</button>
+        data-placement="top" title="Add new word!">Add</button>
         <button type="submit" class="btn btn-primary btn-lg active" disabled="disabled">Play!</button>
       </form>
       <div class="phrases-body">
@@ -44,15 +46,15 @@
       <div class="panel panel-default panel-group" role="tablist" aria-multiselectable="true">
         <div class="panel-heading">
 
-          <!-- Add button -->
-          <button class="btn btn-word-name btn-lg" id="btn-word" type="button" data-toggle="collapse" data-target="#collapseThis<%= _id %>"
-          data-parent="#selector" aria-expanded="false" aria-controls="collapseThis">
+          <!-- Add Word button -->
+          <button class="btn btn-word-name btn-lg" id="btn-word" type="button" data-toggle="collapse" 
+           data-target="#collapseThis<%= _id %>" data-parent="#selector" aria-expanded="false" aria-controls="collapseThis">
             <h4 class="panel-title"><%= word %></h4>
           </button>
 
           <!--Delete button -->
           <button data-_id="<%= _id %>" onclick="deletePhrase(this)" type="button" data-toggle="tooltip"
-          data-placement="bottom" title="Delete" class="close">
+           data-placement="bottom" title="Delete" class="close">
             <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
           </button>
         </div>
@@ -60,10 +62,9 @@
 
           <!-- Edit button -->
           <button data-_id="<%= _id %>" onclick="" data-toggle="modal" type="button" class="edit pull-right btn-link"
-          data-target="#editModal<%= _id %>" data-whatever="<%= _id %>">
-              <span class="glyphicon glyphicon-edit" aria-hidden="false"></span>
+           data-target="#editModal<%= _id %>" data-whatever="<%= _id %>">
+            <span class="glyphicon glyphicon-edit" aria-hidden="false"></span>
           </button>
-
           <%= definition %>
         </div>
       </div>
@@ -81,7 +82,8 @@
             <form>
               <div class="form-group">
                 <label for="message-text" class="control-label">Definition:</label>
-                <textarea class="form-control" id="message-text" rows="4"><%= definition %></textarea>
+                <textarea class="form-control" id="message-text" rows="4">   <%= definition %>
+                </textarea>
               </div>
             </form>
           </div>
@@ -94,4 +96,5 @@
     </div>
   </script>
 </body>
+
 </html>
