@@ -10,6 +10,9 @@ var phrases = [{
     word: "Jasmine",
     definition: "A behavior-driven development framework for testing JavaScript code."
   }, {
+    word: "SQL",
+		definition: "A special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS)."
+	}, {
     word: "Express",
     definition: "A configurable, minimal web framework for Node."
   }, {
@@ -21,9 +24,6 @@ var phrases = [{
   }, {
     word: "Node.js",
 		definition: "A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications."
-	}, {
-    word: "SQL",
-		definition: "A special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS)."
 	}, {
     word: "AJAX",
 		definition: "A group of interrelated Web development techniques used on the client-side to create asynchronous Web applications. With Ajax, web applications can send data to and retrieve from a server asynchronously (in the background) without interfering with the display and behavior of the existing page."

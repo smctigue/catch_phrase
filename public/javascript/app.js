@@ -1,5 +1,16 @@
 $(function() {
   pageLoad();
+
+  /* Haven't really been able to figure out how to render this (header image) 
+  without putting in document.ready*/
+  var jumboHeight = $('.jumbotron').outerHeight();
+  function parallax() {
+    var scrolled = $(window).scrollTop();
+    $('.bg').css('height', (jumboHeight - scrolled) + 'px');
+  }
+  $(window).scroll(function(e) {
+    parallax();
+  });
 });
 
 function pageLoad() {
@@ -13,6 +24,7 @@ function pageLoad() {
       });
   });
 }
+
 
 function getPhrases() {
   $.get("/phrases", function(res) {
@@ -40,4 +52,3 @@ function deletePhrase(context) {
     }
   });
 }
-
