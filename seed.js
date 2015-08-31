@@ -44,6 +44,4 @@ db.Phrase.create(phrases, function(err,
   process.exit();
 })
 
-
-// db.Phrase.remove({}, function(err, phrases){
-// });
+// db.Phrase.remove({}, function(err, phrases){});

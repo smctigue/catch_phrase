@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Catchphrase.ly</title>
   <meta charset="utf-8" />
@@ -14,9 +13,7 @@
   <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/static/stylesheet/app.css">
   <script src="/static/javascript/app.js"></script>
-
 </head>
-
 <body>
   <div class="container" id="page-wrapper">
     <div class="bg"></div>
@@ -46,7 +43,7 @@
       <div class="panel panel-default panel-group" role="tablist" aria-multiselectable="true">
         <div class="panel-heading">
 
-          <!-- Word button -->
+          <!-- Phrase button -->
           <button class="btn btn-word-name btn-md" id="btn-word" type="button" data-toggle="collapse" 
            data-target="#collapseThis<%= _id %>" data-parent="#selector" aria-expanded="false" aria-controls="collapseThis">
             <h4 class="panel-title"><%= word %></h4>
@@ -89,12 +86,11 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary" disabled="disabled">Save</button>
+            <button type="button" class="btn btn-primary" >Save</button>
           </div>
         </div>
       </div>
     </div>
   </script>
 </body>
-
 </html>
