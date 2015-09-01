@@ -1,8 +1,6 @@
 $(function() {
   pageLoad();
 
-  /* Haven't really been able to figure out how to render this (header image) 
-  without putting in document.ready*/
   var jumboHeight = $('.jumbotron').outerHeight();
   function parallax() {
     var scrolled = $(window).scrollTop();
