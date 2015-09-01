@@ -10,6 +10,10 @@ var PhraseSchema = new Schema({
 	definition: {
 		type: String,
 		required: true
+	},
+	createdAt: {
+		type: Date,
+		default: Date.now()
 	}
 })
 

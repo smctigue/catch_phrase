@@ -21,11 +21,12 @@ app.get("/", function (req, res) {
 
 
 app.get("/phrases", function (req, res) {
-  db.Phrase.find({}, function (err, phrases) {
+  db.Phrase.find({}, null, {sort: {createdAt: -1}}, function (err, phrases) {
     if (err) {
       console.log(err);
       return res.sendStatus(400);
     }
+    console.log(phrases);
     res.send(phrases);
   })
 });

@@ -1,4 +1,11 @@
 {
+  "name": "catch_phrase",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/smctigue/catch_phrase",
+  "authors": [
+    "smctigue <stephenmctigue@gmail.com>"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",

@@ -28,8 +28,7 @@ function pageLoad() {
 
 function getPhrases() {
   $.get("/phrases", function(res) {
-    var phrases = res.reverse();
-    renderPhrase(phrases);
+    renderPhrase(res);
   });
 }
 

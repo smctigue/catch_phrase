@@ -34,14 +34,17 @@ var phrases = [{
 ];
 
 
-db.Phrase.create(phrases, function(err,
-  phrases) {
-  if (err) {
-    return console.log(err)
-  };
-  console.log("added", phrases.length,
-    "phrases")
-  process.exit();
+db.Phrase.remove({}, function(err, result) {
+
+	db.Phrase.create(phrases, function(err, phrases) {
+	  if (err) {
+	    return console.log(err)
+	  };
+	  console.log("added", phrases.length,
+	    "phrases")
+	  process.exit();
+	});
+
 });
 
 // db.Phrase.remove({}, function(err, phrases){});
