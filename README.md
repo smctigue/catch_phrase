@@ -8,11 +8,12 @@ Create a basic CRUD app.
 - User can update a phrases description with changes, which will update the page as well.
 - Updating a description sends a confirmation that the phrase has been updated
 
-#Have-to
-- Need to revise the project with a proper update technique.  At the moment a user can edit a description but is not able to save it to the page nor the database.
-
 # How-to
 - Download/install dependencies
 - Run mongodb
-- Populate db with seed file 'node seed.js'
+- Populate the database with seed file 'node seed.js'
 - Run nodemon
+
+#Have-to
+- Need to revise the project with a proper update technique.  At the moment a user can edit a description but is not able to save it to the page nor the database.
+- Be able to play the game.
