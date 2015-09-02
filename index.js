@@ -11,17 +11,23 @@ var db = require("./models");
 app.use("/static", express.static("public"));
 app.use("/vendor", express.static("bower_components"));
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 
 // ROUTES
-app.get("/", function (req, res) {
+app.get("/", function(req, res) {
   res.sendFile(path.join(views + "index.html"));
 });
 
 
-app.get("/phrases", function (req, res) {
-  db.Phrase.find({}, null, {sort: {createdAt: -1}}, function (err, phrases) {
+app.get("/phrases", function(req, res) {
+  db.Phrase.find({}, null, {
+    sort: {
+      createdAt: -1
+    }
+  }, function(err, phrases) {
     if (err) {
       console.log(err);
       return res.sendStatus(400);
@@ -30,9 +36,9 @@ app.get("/phrases", function (req, res) {
   })
 });
 
-app.post("/phrases", function (req, res) { 
+app.post("/phrases", function(req, res) {
   var newPhrase = req.body;
-  db.Phrase.create(newPhrase, function (err, phrase) {
+  db.Phrase.create(newPhrase, function(err, phrase) {
     if (err) {
       console.log(err);
       return res.sendStatus(400);
@@ -41,9 +47,11 @@ app.post("/phrases", function (req, res) {
   })
 });
 
-app.delete("/phrases/:id", function (req, res) {
+app.delete("/phrases/:id", function(req, res) {
   var id = req.params.id;
-  db.Phrase.remove({_id: id}, function(err, phrase) {
+  db.Phrase.remove({
+    _id: id
+  }, function(err, phrase) {
     if (err) {
       console.log(err);
       return res.sendStatus(400);
